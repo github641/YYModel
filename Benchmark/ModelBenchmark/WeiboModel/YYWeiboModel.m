@@ -7,6 +7,7 @@
 //
 
 #import "YYWeiboModel.h"
+// lzy注171227：可以定义一个宏，把相关的方法都放里面。要实现，写句宏就好了。
 
 #define YYModelSynthCoderAndHash \
 - (void)encodeWithCoder:(NSCoder *)aCoder { [self yy_modelEncodeWithCoder:aCoder]; } \
@@ -17,6 +18,7 @@
 
 
 @implementation YYWeiboPictureMetadata
+// lzy注171227：左属性，右json
 + (NSDictionary *)modelCustomPropertyMapper {
     return @{@"cutType" : @"cut_type"};
 }
@@ -119,6 +121,7 @@ YYModelSynthCoderAndHash
              @"picInfos" : @"pic_infos",
              @"inReplyToUserId" : @"in_reply_to_user_id"};
 }
+// lzy注171227：左属性，右类名
 + (NSDictionary *)modelContainerPropertyGenericClass {
     return @{@"picIds" : [NSString class],
              @"picInfos" : [YYWeiboPicture class],
