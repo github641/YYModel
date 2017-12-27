@@ -59,6 +59,7 @@
             // Manually
             [[[[GHUser alloc] initWithJSONDictionary:json] description] length];
             
+            // lzy注171227：json 转 模型
             // YYModel
             [YYGHUser yy_modelWithJSON:json];
             
