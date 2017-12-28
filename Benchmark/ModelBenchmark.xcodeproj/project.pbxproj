@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4593CF1C756AF3F59EC20E2B /* Pods_ModelBenchmark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881D32D04FC83F599540AA5B /* Pods_ModelBenchmark.framework */; };
+		84A28BD71FF48DB800FD68E5 /* YYModelExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A28BD51FF48DB800FD68E5 /* YYModelExample.m */; };
 		D961993C1F36FDA500B70581 /* DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D961992F1F36FDA500B70581 /* DateFormatter.m */; };
 		D961993D1F36FDA500B70581 /* FEWeiboModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D96199311F36FDA500B70581 /* FEWeiboModel.m */; };
 		D961993E1F36FDA500B70581 /* GitHubUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D96199331F36FDA500B70581 /* GitHubUser.m */; };
@@ -28,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84A28BD51FF48DB800FD68E5 /* YYModelExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYModelExample.m; sourceTree = "<group>"; };
+		84A28BD61FF48DB800FD68E5 /* YYModelExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModelExample.h; sourceTree = "<group>"; };
 		881D32D04FC83F599540AA5B /* Pods_ModelBenchmark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModelBenchmark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9483CF823894351D8F2EEB /* Pods-ModelBenchmark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModelBenchmark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModelBenchmark/Pods-ModelBenchmark.debug.xcconfig"; sourceTree = "<group>"; };
 		D961992E1F36FDA500B70581 /* DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateFormatter.h; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 		D97B2D4A1F36F44A00AD0C9D /* ModelBenchmark */ = {
 			isa = PBXGroup;
 			children = (
+				84A28BD61FF48DB800FD68E5 /* YYModelExample.h */,
+				84A28BD51FF48DB800FD68E5 /* YYModelExample.m */,
 				D97B2D4E1F36F44A00AD0C9D /* ViewController.h */,
 				D97B2D4F1F36F44A00AD0C9D /* ViewController.m */,
 				D9CF94441F36FD0A00459BFC /* SwiftModel.swift */,
@@ -302,6 +307,7 @@
 				D99DE7DB1F3705A400734B10 /* SwiftGithubUser.swift in Sources */,
 				D96199401F36FDA500B70581 /* MJWeiboModel.m in Sources */,
 				D97B2D4D1F36F44A00AD0C9D /* AppDelegate.m in Sources */,
+				84A28BD71FF48DB800FD68E5 /* YYModelExample.m in Sources */,
 				D961993D1F36FDA500B70581 /* FEWeiboModel.m in Sources */,
 				D96199411F36FDA500B70581 /* MTWeiboModel.m in Sources */,
 			);

@@ -14,11 +14,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
+/** 编码类型
  Type encoding's type.
  */
 typedef NS_OPTIONS(NSUInteger, YYEncodingType) {
-    YYEncodingTypeMask       = 0xFF, ///< mask of type value
+    YYEncodingTypeMask       = 0xFF, ///< mask of type value 下面部分是 “值类型”
     YYEncodingTypeUnknown    = 0, ///< unknown
     YYEncodingTypeVoid       = 1, ///< void
     YYEncodingTypeBool       = 2, ///< bool
@@ -43,7 +43,7 @@ typedef NS_OPTIONS(NSUInteger, YYEncodingType) {
     YYEncodingTypeCString    = 21, ///< char*
     YYEncodingTypeCArray     = 22, ///< char[10] (for example)
     
-    YYEncodingTypeQualifierMask   = 0xFF00,   ///< mask of qualifier
+    YYEncodingTypeQualifierMask   = 0xFF00,   ///< mask of qualifier 下面部分是“修饰语”
     YYEncodingTypeQualifierConst  = 1 << 8,  ///< const
     YYEncodingTypeQualifierIn     = 1 << 9,  ///< in
     YYEncodingTypeQualifierInout  = 1 << 10, ///< inout
@@ -52,7 +52,7 @@ typedef NS_OPTIONS(NSUInteger, YYEncodingType) {
     YYEncodingTypeQualifierByref  = 1 << 13, ///< byref
     YYEncodingTypeQualifierOneway = 1 << 14, ///< oneway
     
-    YYEncodingTypePropertyMask         = 0xFF0000, ///< mask of property
+    YYEncodingTypePropertyMask         = 0xFF0000, ///< mask of property 下面部分是 属性关键字
     YYEncodingTypePropertyReadonly     = 1 << 16, ///< readonly
     YYEncodingTypePropertyCopy         = 1 << 17, ///< copy
     YYEncodingTypePropertyRetain       = 1 << 18, ///< retain
@@ -76,7 +76,7 @@ typedef NS_OPTIONS(NSUInteger, YYEncodingType) {
 YYEncodingType YYEncodingGetType(const char *typeEncoding);
 
 
-/**
+/** ivar是instance variable的缩写，实例变量
  Instance variable information.
  */
 @interface YYClassIvarInfo : NSObject
